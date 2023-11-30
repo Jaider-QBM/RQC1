@@ -60,7 +60,7 @@ header .head {
     gap: 4em;
 }
 
-.nav-bar ul li a{
+.nav-bar ul li a, li{
     text-decoration: none;
     color: var(--blanco);
 }
@@ -246,6 +246,80 @@ header .head {
 .motto .family{
     font-family: 'Rubik', sans-serif;
     font-size: 3.5em;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+  
+.modal-contenido {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    max-height: 400px;
+    overflow-y: auto;
+}
+  
+.cerrar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-contenido form{
+    margin-top: 1em;
+}
+
+form .title{
+    background: var(--AzulOscuro);
+    padding: .5em;
+    color: var(--blanco);
+    border-radius: .5em .5em 0 0;
+    font-weight: 100;
+}
+form .info1{
+    margin-top: .5em;
+    padding: .5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 1px solid var(--AzulOscuro);
+}
+
+form .info1 .segun h4{
+    font-weight: 300;
+    font-size: .9em;
+}
+
+form .info1 .segun input{
+    padding: .2em;
+    margin-top: 5px;
+}
+
+form .buttom button{
+    float: right;
+    margin: 1em;
+    padding: .5em 1em;
+    background: var(--azul);
+    border: 0;
+    color: var(--blanco);
+    border-radius: .5em;
+}
+
+form .buttom button:hover{
+    background: green;
 }
 
 /* ---footer---- */
@@ -490,4 +564,8 @@ footer{
         display: none;
     }
 
+    .modal-contenido{
+        width: 80%;
+        margin: 30% auto;
+    }
 }
