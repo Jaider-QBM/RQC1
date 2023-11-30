@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d42fb48da4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../../static/css/styleStudentCrono.css">
+    <link rel="ICON" href="../../../static/img/logonaciones.png">
+    <title>Colegio Naciones Unidas I.E.D - Cronograma</title>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="title-logo">
+                <img src="../../../static/img/logonaciones.png" alt="Logo-Empresa">
+                <h1 class="title">Colegio Naciones Unidas I.E.D</h1>
+            </div>
+
+            <button id="abrir" class="abrirMenu"><i class="fa-solid fa-bars"></i></button>
+            <nav id="menu" class="nav-bar">
+                <button id="cerrar" class="cerrarMenu"><i class="fa-solid fa-x"></i></button>
+                <ul class="nav">
+                    <li><a href="IndexStudent.html" class="op">Inicio</a></li>
+                    <li><a href="StudentShe.html" class="op2">Cronograma</a></li>
+                    <li><a href="StudentGrades.html" class="op3">Mis Notas</a></li>
+
+                    <li class="menu-item">Mi cuenta<i class="fa-solid fa-user"></i>
+                        <ul class="sub-menu">
+                            <li><a href="StudentProfile.html">Mi Perfil</a></li>
+                            <li><a href="">Cerrar <i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+                        </ul>
+                    </li>
+
+                    <li class="obse"><a href="StudentProfile.html">Mi Perfil</a></li>
+                    <li id="obse" class="obse"><a href="#">Salir <i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="title-img">
+            <h1>
+                Mi cronograma 
+            </h1>
+        </div>
+    
+        <div class="container">
+            <div class="left">
+                <div class="calendar">
+                    <div class="month">
+                        <i class="fas fa-angle-left prev"></i>
+                        <div class="date">Noviembre 2023</div>
+                        <i class="fas fa-angle-right next"></i>
+                    </div>
+                    <div class="weekdays">
+                        <div>Dom</div>
+                        <div>Lun</div>
+                        <div>Mar</div>
+                        <div>Mie</div>
+                        <div>Jue</div>
+                        <div>Vie</div>
+                        <div>Saba</div>
+                    </div>
+                    <div class="days"></div>
+                    <div class="goto-today">
+                        <div class="goto">
+                            <input type="text" placeholder="mm/yyyy" class="date-input" />
+                            <button class="goto-btn">Go</button>
+                        </div>
+                        <button class="today-btn">Hoy</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="today-date">
+                    <div class="event-day">Mie</div>
+                    <div class="event-date">12th Noviembre 2023</div>
+                </div>
+                <div class="events"></div>
+                
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="conte">
+                <div class="comunidad">
+                    <h2>
+                        Sobre nosotros
+                    </h2>
+    
+                    <hr>
+    
+                    <ul>
+                        <li>
+                            Horizonte institucional
+                        </li>
+    
+                        <li>
+                            Ubicacion
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="comunidad" id="comunidad">
+                    <h2>
+                        Comunidad
+                    </h2>
+    
+                    <hr>
+    
+                    <ul>
+                        <li>
+                            Estudiantes 
+                        </li>
+    
+                        <li>
+                            Docentes
+                        </li>
+    
+                        <li>
+                            Talleres preparativos
+                        </li>
+    
+                        <li>
+                            Rendicion de cuentas
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="comunidad" >
+                    <h2>
+                        Contactanos
+                    </h2>
+    
+                    <hr>
+    
+                    <p class="loca">Localidad:</p>
+                    <p class="des">10 - Engativa</p>
+    
+                    <p class="loca">Sede A:</p>
+                    <p class="des">Dirección: CL 73 BIS 68 G - 27</p>
+                    <p class="des">Telefono: 2502506</p>
+    
+                    <p class="loca">Sede B:</p>
+                    <p class="des">Dirección: Cl. 73A #69j-10</p>
+                    <p class="des">Teléfono: 12507823</p>
+                </div> 
+            </div>
+            
+            <hr class="linea">
+            <p class="dere">
+                Todos los derechos reservados © 2023 RQC  EDUCATIONAL INFORMATION 
+            </p>
+        </div>
+    </footer>
+
+    <script src="../../../static/js/scroll.js"></script>
+</body>
+</html>

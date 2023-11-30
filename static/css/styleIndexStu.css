@@ -126,210 +126,126 @@ header .head {
     display: none;
 }
 
-/* ----------MAIN----------- CUERPO DE LA PAGINA---------- */
+/* ----MAIN------ Cuerpo de la pagina---------- */
 
-.title-img{
-    background: linear-gradient(to top, white, rgb(38, 0, 255));
-    height: 20em;
+.present{
+    height: 37.5em;
+    background-image: url(../img/Rectangle\ 12.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.title-img h1{
+.present h1{
     font-weight: 200;
-    color: var(--gris);
+    color: var(--blanco);
     font-size: 2em;
 }
 
-.info{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
 
-.info .perfil{
-    width: 19%;
-    border: 1px solid var(--gris);
-    border-radius: 11px;
-    height: max-content;
+.cronograma{
+    padding: 2em;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-.perfil .fot{
-    width: 100%;
-    padding: 1em;
-    border-radius: 11px 11px 0px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--AzulOscuro);
-}
-
-.perfil .fot img{
-    width: 68%;
-    border-radius: 11px;
-}
-
-.perfil .name-list{
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.perfil .name-list .name{
-    color: var(--AzulOscuro);
-    text-align: center;
-}
-
-.perfil .name-list .list{
-    width: 85%;
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.perfil .name-list .list a{
-    color: var(--AzulOscuro);
-    width: 75%;
-    display: flex;
-    align-items: center;
-}
-
-.perfil .name-list .list a i{
-    font-size: 0.8em;
-    margin: 0px 10px 0px 0px;
-}
-
-.perfil .name-list .list li{
-    margin-top: 5px;
-}
-
-.info .conte{
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.info .conte .infor{
-    width: 100%;
-    border: 1px solid var(--AzulOscuro);
-}
-
-.info .conte .infor .title{
-    background: var(--AzulOscuro);
-    padding: .5em;
-    color: var(--blanco);
-}
-
-.info .conte .infor .title h3{
-    font-weight: 100;
-}
-
-.info1{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.info1 .segun{
-    margin: .5em;
-}
-
-.info1 .segun h4{
-    font-size: .9em;
+.cronograma .cronoEsta {
+    font-size: 1.8em;
     font-weight: 300;
+    border-bottom: 5px solid var(--azul);
+    width: 35%;
+    animation: slideRight 1s ease-out forwards;
 }
 
-.info1 .segun input{
-    margin-top: 5px;
-    padding: 5px .5em;
+@keyframes slideRight {
+    0% {
+        transform: translateX(-600%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
-form .buttom button{
-    float: right;
-    border: 0;
-    background: var(--azul);
-    padding: 5px 1.5em;
-    margin: 1em;
+.crono{
+    margin: 2.5em 5em;
+}
+
+.crono .header{
+    background: var(--AzulOscuro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
     color: var(--blanco);
-    border-radius: .5em;
+    font-weight: 200;
+    border-top-right-radius: 1.5em;
+    border-top-left-radius: 1.5em;
 }
 
-.info .conte .course{
+.header h1{
+    font-weight: 100;
+}
+
+.crono .semana{
     width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.info .conte .course .title{
-    padding: .5em;
-    color: var(--blanco);
-    background: var(--AzulOscuro);
-}
-
-.info .conte .course .title h3{
-    font-weight: 100;
-}
-
-.info .conte .course .te .dosD{
-    display: flex;
     flex-wrap: wrap;
+}
+
+.semana .lm{
+    width: 20%;
+    border: 1px solid var(--gris2);
+    margin-top: 1em;
+}
+
+.semana .lm .ti{
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--AzulOscuro);
+    color: var(--blanco);
+    font-weight: 100;
+}
+
+.semana .lm .mensaje{
+    padding: 1px 10px;
+    width: 100%;
+    height: 8em;
+    border: 1px solid #ccc;
+    overflow: auto;
+    white-space: normal;
+    text-align: justify;
+    text-overflow: ellipsis;
+}
+
+
+.motto{
+    height: 30em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-around;
-}
-
-.info .conte .course .te .dosD .curso{
-    width: 21.5em;
-    height: 4.938em;
-    display: flex;
-    margin: 1em;
-    border: 1px solid var(--header);
-    border-radius: 1em;
-    background: var(--header);
-}
-
-.course .te .dosD .curso h3{
-    font-weight: 100;
-}
-
-.course .te .dosD .curso h4{
-    font-weight: 100;
-}
-
-.course .te .dosD .curso .fot{
-    width: 25%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 1em 0px 0px 1em;
-    background: var(--AzulOscuro);
+    background-image:  linear-gradient(
+        rgba(26, 2, 96, 0.8),
+        rgba(26, 2, 96, 0.8)
+    ),url(../img/lema.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: var(--blanco);
+    text-align: center
+}
+.motto .mot{
+    width: 80% ;
+    font-family: 'Kanit', sans-serif;
+    font-size: 3em;
 }
 
-.course .te .dosD .curso .infor{
-    width: 60%;
-    height: 100%;
-    padding: 0px 0px 0px 10px;
-    background: var(--blanco);
-}
-
-.course .te .dosD .curso .to{
-    width: 15%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0px 1em 1em 0px;
-    background: var(--AzulOscuro);
-    color: var(--blanco);
+.motto .family{
+    font-family: 'Rubik', sans-serif;
+    font-size: 3.5em;
 }
 
 /* ---footer---- */
@@ -348,7 +264,7 @@ footer{
     
 }
 
-.footer .conte{
+.conte{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -394,9 +310,6 @@ footer{
     color: var(--blanco);
     text-align: center;
 }
-
-
-
 /* responsive de portatil */
 
 @media only screen and ( max-width: 1024px ){
@@ -478,13 +391,49 @@ footer{
         border-radius: 0;
     }
 
-    .title-img{
-        height: 20em;
+    .present{
+        height: 25em;
     }
 
-    .title-img h1{
+    .present h1{
         text-align: center;
         font-size: 1.5em;
+    }
+
+    .cronograma .cronoEsta {
+        font-size: 1.5em;
+        width: 50%;
+    }
+
+    .crono{
+        margin: 1.5em 1em;
+    }
+
+    .header h1{
+        font-size: 1.4em;
+    }
+
+    .crono .semana{
+        justify-content: center;
+    }
+
+    .semana .lm{
+        width: 12em;
+    }
+
+    .semana .lm .ti{
+        font-size: 1.3em;
+    }
+
+    .motto{
+        height: 25em;
+    }
+    .motto .mot{
+        font-size: 2em;
+    }
+    
+    .motto .family{
+        font-size: 2.5em;
     }
 
 }
@@ -498,28 +447,47 @@ footer{
         width: 50%;
     }
 
-    .title-img{
-        height: 15em;
+    .present{
+        height: 18em;
     }
 
-    .title-img h1{
+    .present h1{
         text-align: center;
         font-size: 1em;
-        justify-content: end;
-        color: var(--AzulOscuro);
     }
 
-    .info {
-        flex-direction: column;
-        align-items: center;
-    }
-    .info .perfil{
-        width: 50%;
-        margin: 2em;
-    }
-
-    .info .conte{
+    .cronograma .cronoEsta {
+        font-size: 1em;
         width: 90%;
+    }
+
+    .crono{
+        margin: 1.5em 0;
+    }
+
+    .crono .header{
+        border-top-right-radius: 1em;
+        border-top-left-radius: 1em;
+    }
+
+    .header h1{
+        font-size: 1.2em;
+    }
+
+    .crono .semana{
+        justify-content: center;
+    }
+
+    .semana .lm{
+        width: 12em;
+    }
+
+    .semana .lm .ti{
+        font-size: 1.1em;
+    }
+
+    .motto{
+        display: none;
     }
 
 }
