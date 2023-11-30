@@ -1,0 +1,502 @@
+:root{
+    --AzulOscuro: #010324;
+    --azul: #0066FF;
+    --blanco: white;
+    --gris:#01032496;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header ------------ Encabezado de la pagina-------*/
+header{
+    position: fixed;
+    padding: 10px;
+    width: 100%;
+    background-color: var(--gris);
+    border-bottom: 1px solid var(--AzulOscuro);
+    border-radius: .5em;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+header.scrolled {
+    background-color: var(--AzulOscuro); /* Cambia este color según tus preferencias */
+}
+
+header .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.head .title-logo{
+    display: flex;
+    align-items: center;
+}
+
+.title-logo img{
+    width: 3.2em;
+    height: 3em;
+}
+
+.title-logo h1{
+    font-weight: 300;
+    font-size: 1.2em;
+    color: var(--blanco);
+    margin-left: 10px;
+}
+
+.head .nav-bar ul{
+    display: flex;
+    gap: 4em;
+}
+
+.nav-bar ul li a{
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+.nav-bar .op:hover,.op1:hover,.op2:hover{
+    border-bottom: 2px solid var(--azul) ;
+}
+
+
+.nav-bar .nav-button{
+    margin-left: 10em;
+    background: var(--azul);
+    padding: 5px 1em;
+    color: var(--blanco);
+    border-radius: .5em;
+}
+
+.abrirMenu, .cerrarMenu{
+    display: none;
+}
+
+/* ----MAIN------ Cuerpo de la pagina---------- */
+
+
+.present{
+    height: 37.5em;
+    background-image: url(../img/Rectangle\ 12.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.present h1{
+    font-weight: 200;
+    color: var(--blanco);
+    font-size: 2em;
+}
+
+.himno{
+    padding: 2em;
+}
+
+.himn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 25em ;
+}
+
+.himn .nuestro{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.animated-title {
+    font-weight: 300;
+    font-size: 1.6em;
+    border-bottom: 5px solid var(--azul) ;
+    animation: slideRight 1s ease-out forwards;
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-600%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.himn .parra{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.parra .coes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 35%;
+    height: 15em;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.parra #coes{
+    height: 12em;
+}
+
+.motto{
+    height: 30em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-image:  linear-gradient(
+        rgba(26, 2, 96, 0.8),
+        rgba(26, 2, 96, 0.8)
+    ),url(../img/lema.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--blanco);
+    text-align: center
+}
+.motto .mot{
+    width: 80% ;
+    font-family: 'Kanit', sans-serif;
+    font-size: 3em;
+}
+
+.motto .family{
+    font-family: 'Rubik', sans-serif;
+    font-size: 3.5em;
+}
+
+.info{
+    padding: 2em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.car1{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    width: 30%;
+    height: 21em;
+}
+
+#car1{
+    justify-content: space-between;
+    height: 10em;
+}
+
+.animated-title1 {
+    width: auto;
+    font-weight: 500;
+    font-size: 1.2em;
+    border-bottom: 2px solid var(--azul) ;
+    animation: slideRight 2s ease-out forwards;
+}
+
+
+.car1 .matri{
+    font-weight: bold;
+}
+
+.car1 .conte{
+    text-align: justify;
+}
+
+.car1 ul{
+    width: 80%;
+    margin-left: 2em;
+}
+
+.car1 ul li{
+    list-style: decimal;
+}
+
+.car1 a{
+    text-decoration-line: underline;
+    color: var(--header);
+}
+
+
+/* ---footer---- */
+
+footer{
+    height: 18.4em;
+    background: var(--AzulOscuro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    width: 75em;
+    height: 90%;
+}
+
+.conte{
+    display: flex;
+    justify-content: space-between;
+}
+
+.comunidad{
+    width: 19.25em;
+    color: var(--blanco);
+}
+
+.comunidad h2{
+    font-size: 1em;
+    font-weight: 100;
+}
+
+.comunidad hr{
+    margin-top: 5px;
+}
+
+.comunidad ul{
+    margin: 1em;
+}
+
+.comunidad ul li{
+    list-style: inside;
+    margin-top: 10px;
+}
+
+.comunidad .loca{
+    margin: 1em 1em 0;
+}
+
+.comunidad .des{
+    margin: 0 2em 0;
+}
+
+.footer .linea{
+    margin-top: 1em;
+}
+
+.dere {
+    color: var(--blanco);
+    text-align: center;
+}
+
+/* responsive de portatil */
+
+@media only screen and ( max-width: 1024px ){
+    .nav-bar .nav-button{
+        margin-left: 4em;
+    }
+    .himn{
+        height: 45em;
+    }
+    .parra .coes{
+        height: 25em;
+        font-size: 1.5em;
+    }
+    .parra #coes{
+        height: 16em;
+    }
+}
+
+/* responsive de tableta */
+
+@media only screen and (max-width: 769px){
+
+    header .head {
+        justify-content: space-between;
+    }
+
+    .abrirMenu, .cerrarMenu{
+        background-color: transparent;
+        color: var(--blanco);
+        display: block;
+        border: 0;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .nav-bar{
+        width: 30%;
+        height: 100vh;
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 5rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: var(--AzulOscuro);
+        padding: 1.5rem;
+        box-shadow: 0 0 0 100vmax rgb(0, 0, 0, 0.35);
+    }
+
+    .nav-bar.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+    .head .nav-bar ul{
+        flex-direction: column;
+        align-items: end;
+        gap: 2em;
+    }
+
+    .nav-bar ul li a{
+        color: var(--blanco);
+    }
+    
+    .nav-bar .nav-button{
+        margin-left: 0px;
+        background: transparent;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .present{
+        height: 25em;
+    }
+
+    .present h1{
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .himno{
+        padding: 1em;
+    }
+
+    .himn{
+        height: 30em;
+    }
+
+    .animated-title {
+        font-size: 1.5em;
+    }
+
+    .parra .coes{
+        height: 22em;
+        font-size: 1.1em;
+    }
+    .parra #coes{
+        height: 16em;
+    }
+
+    .motto{
+        height: 25em;
+    }
+    .motto .mot{
+        font-size: 2em;
+    }
+    
+    .motto .family{
+        font-size: 2.5em;
+    }
+
+    .car1{
+        height: 25em;
+        width: 41%;
+    }
+
+    #car1{
+        height: 14em;
+    }
+
+    .conte{
+        justify-content: space-around;
+    }
+
+    #comunidad{
+        display: none;
+    }
+}
+
+/* Responsive de movile */
+
+@media only screen and ( max-width: 426px){
+    .title-logo {
+        width: 85%;
+    }
+
+    .nav-bar{
+        width: 50%;
+    }
+
+    .present{
+        height: 18em;
+    }
+
+    .present h1{
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .himno{
+        padding: 1em;
+    }
+    .himn{
+        height: 42em;
+    }
+
+    .animated-title {
+        font-size: 1.3em;
+    }
+    .himn .parra{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .parra .coes{
+        width: 80%;
+        height: 22em;
+        font-size: 1em;
+    }
+
+    .parra #coes{
+        height: 15em;
+    }
+
+    .motto{
+        display: none;
+    }
+
+    .info{
+        flex-direction: column;
+        height: 47em;
+    }
+
+    .car1{
+        height: 25em;
+        width: 100%;
+    }
+
+    #car1{
+        height: 14em;
+    }
+
+    footer{
+        height: 27em;
+    }
+
+    .conte{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #comunidad{
+        display: none;
+    }
+}
